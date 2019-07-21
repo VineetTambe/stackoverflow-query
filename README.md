@@ -1,7 +1,10 @@
 # stackoverflow-query
-This program is aimed towards resolving the issue of some query getting 0 results when searched in stackOverFlow
+This program is aimed towards improving the search results in StackOverflow. It provides the user with most relevant questions sorted based on their text similarity with the query. It also provides the list of answers, to the selected question, based on the analysis of the sentiment of the comments.
 
-Let’s start with downloading required packages and importing modules. 
+## How to run the code?
+All the instructions to run the code are provided within the python notebook: StackOverflowSearch.ipynb
+
+Start with downloading required packages (stackapi and twython) and importing modules. 
 We also define constants like ‘k’ for limiting number of solutions and SITE that refers to ‘Stack Overflow’.
 
 We have tried to make the workflow of our program to match that of the StackOverflow website itself.
@@ -15,3 +18,5 @@ We start by fetching list of all the answers to the question selected by the use
 Then we analyse the comments for their sentiments and obtain a score for each answer. 
 We further sort these answers based on the score. 
 Finally, we display the question and corresponding list of answers, with their IDs and body,  sorted as they’d appear on the website. 
+
+Check the idea, presentation, and video for more details.
