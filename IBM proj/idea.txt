@@ -1,0 +1,16 @@
+Uniqueness:
+	Every day, tens of thousands of people on Stackoverflow help the coding comunity on the internet by answering their doubts. And millions of times a day, someone clears a hurdle and doesn’t give up on their project, thanks to solutions available on the website. However there appears to be a flaw in the way StackOverFlow implements their search algorithm. Our team has come up with a simple solution to rectify this inconvenience.              
+
+Business Impact:
+	The current system makes it difficult for upcoming programmers and coders who aren't familiar the proper syntax to ask a question on the site. This often results in their doubts ending up unanswered, which is harmful for the entier coding communtiy in general. This also destroyes the urge for this young mind to interact with other professionals and improve upon their skills.
+	However we have found a way to change all this! By implementing our program the user has a greater chance of finding an answer to their questions, not matter how they ask it. This will surely inculcate a greater interest among the beginers to start interactions and learn more from the professionals, resulting in a community which has a healthy envionment and a drive to code the unthinkable.
+
+
+Architectural flow:
+	The user enters the query. The program responds to it by giving the user a list of related question sorted on the basis of text similarity between the entered query and the questions extracted from the stackoverflow database based upon the tags in the entered user query. Then the user is selects a question from the list offered. Using stack api the program fetches list of answers corresponding to that question. The comments of these answers are analysed for their sentiment. A simple formula is used to weigh the sentiment and assign a score to the answer. Then these answers are sorted on the basis of this score and displayed to the user. Now the user has a response consisting of the most relevant results.
+
+Technologies used: 
+nltk
+stackapi
+twython
+sklearn	
